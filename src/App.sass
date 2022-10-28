@@ -1,0 +1,9 @@
+@import "./Styles/Variables/Variables.sass"
+.main-background 
+  background-image: url("../assets/images/mobile bg.jpg")
+  background-size: cover
+  height: 100vh
+
+@media screen and (min-width: $break-min-width)
+  .main-background 
+    background-image: url("../assets/images/desktop bg.jpg")
