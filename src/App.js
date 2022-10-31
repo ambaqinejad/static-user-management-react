@@ -1,13 +1,12 @@
 import './App.css';
 import users from './Data/Users';
+import UsersList from './Components/UsersList';
 
 function App() {
 
-  console.log(users);
-
   return (
-    <div className="main-background">
-      
+    <div>
+      <UsersList users={users}/>
     </div>
   );
 }

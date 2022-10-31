@@ -1,0 +1,14 @@
+.list-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 3rem auto;
+  width: 90%;
+  border: 5px solid rgba(9, 20, 46, 0.751);
+  border-radius: 3rem;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 650px) {
+  .list-container {
+    width: 75%;
+  }
+}/*# sourceMappingURL=UsersList.css.map */
