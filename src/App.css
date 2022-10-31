@@ -1,11 +1,13 @@
-.main-background {
+body {
   background-image: url("../assets/images/mobile bg.jpg");
   background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
   height: 100vh;
 }
 
-@media screen and (min-width: 500px) {
-  .main-background {
+@media screen and (min-width: 650px) {
+  body {
     background-image: url("../assets/images/desktop bg.jpg");
   }
 }/*# sourceMappingURL=App.css.map */
