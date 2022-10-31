@@ -1,6 +1,12 @@
 import "../Styles/User.css";
 
 const User = (props) => {
+  const deleteUserHandler = () => {
+    if (window.confirm("Are you sure")) {
+      props.onDeleteUser(props.user.id);
+    }
+  };
+
   return (
     <div>
       <div className="user-card">
@@ -20,8 +26,10 @@ const User = (props) => {
           </p>
         </div>
         <div className="user-card__controls">
-            <button className="update-btn">Update</button>
-            <button className="delete-btn">Delete</button>
+          <button className="update-btn">Update</button>
+          <button onClick={deleteUserHandler} className="delete-btn">
+            Delete
+          </button>
         </div>
       </div>
     </div>
