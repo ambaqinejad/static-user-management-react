@@ -1,13 +1,37 @@
 @import "./Variables/Variables"
-    
-.list-container 
+
+.list-container
     background-color: rgba(0, 0, 0, 0.6)
     margin: 3rem auto
     width: 90%
     border: 5px solid rgba(9, 20, 46, 0.751)
     border-radius: 3rem
-    padding: 2rem 
+    padding: 2rem
+    height: 60vh
+    overflow: scroll
+    overflow-x: hidden
 
-@media screen and (min-width: $break-min-width) 
+.list-container::-webkit-scrollbar
+    width: 1rem
+
+.list-container::-webkit-scrollbar-track 
+    border-radius: 3rem
+
+
+.list-container::-webkit-scrollbar-thumb
+    background: gray
+    border-radius: 3rem
+
+.list-container::-webkit-scrollbar-track-piece:end 
+    background: transparent
+    margin-bottom: 3rem
+
+
+.list-container::-webkit-scrollbar-track-piece:start 
+    background: transparent
+    margin-top: 3rem
+
+
+@media screen and (min-width: $break-min-width)
     .list-container
         width: 75%

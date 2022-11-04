@@ -5,6 +5,32 @@
   border: 5px solid rgba(9, 20, 46, 0.751);
   border-radius: 3rem;
   padding: 2rem;
+  height: 60vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.list-container::-webkit-scrollbar {
+  width: 1rem;
+}
+
+.list-container::-webkit-scrollbar-track {
+  border-radius: 3rem;
+}
+
+.list-container::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 3rem;
+}
+
+.list-container::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 3rem;
+}
+
+.list-container::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 3rem;
 }
 
 @media screen and (min-width: 650px) {
