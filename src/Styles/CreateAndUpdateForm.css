@@ -1,0 +1,55 @@
+.user-form {
+  display: flex;
+  flex-direction: column;
+}
+.user-form label {
+  align-self: flex-start;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  font-family: sans-serif;
+  margin: 1rem 1rem 0;
+  cursor: pointer;
+}
+.user-form input {
+  margin: 1rem 1rem 0;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+.user-form .avatar-input {
+  color: white;
+}
+.user-form .avatar-input::-webkit-file-upload-button {
+  display: none;
+}
+.user-form .avatar-input::before {
+  content: "Select an avatar.";
+  margin-right: 20px;
+  border-radius: 12px;
+  background-color: white;
+  padding: 10px;
+  color: black;
+}
+.user-form .user-form__buttons-container {
+  display: flex;
+  justify-content: center;
+}
+.user-form .user-form__buttons-container .cancel-btn, .user-form .user-form__buttons-container .save-btn {
+  width: 8rem;
+  padding: 15px;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 2rem 1rem 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 12px;
+}
+.user-form .user-form__buttons-container .cancel-btn {
+  background-color: rgb(210, 202, 166);
+}
+.user-form .user-form__buttons-container .save-btn {
+  background-color: rgb(13, 88, 0);
+  color: white;
+}/*# sourceMappingURL=CreateAndUpdateForm.css.map */
